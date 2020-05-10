@@ -1,163 +1,127 @@
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    border: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .clearfix:after {
-    content: ".";
-    display: block;
-    font-size: 0;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 
 .clearfix {
-    display: block;
+  display: block;
 }
 
-*+html .clearfix {
-    min-height: 1%;
+* + html .clearfix {
+  min-height: 1%;
 }
 
 .provinces_keybord,
 .num_keybord {
-    background-color: #CED3D9;
-    text-align: center;
-    padding: 4px 2px;
-    font-size: 14px;
+  background-color: #ced3d9;
+  text-align: center;
+  padding: 4px 2px;
+  font-size: 14px;
 }
 
 .provinces_keybord li {
-    float: left;
-    width: 11.11%;
-    padding: 2px;
-    box-sizing: border-box;
+  float: left;
+  width: 11.11%;
+  padding: 2px;
+  box-sizing: border-box;
 }
 
 .num_keybord li {
-    float: left;
-    width: 10%;
-    padding: 2px;
-    box-sizing: border-box;
+  float: left;
+  width: 10%;
+  padding: 2px;
+  box-sizing: border-box;
 }
 
-.provinces_keybord .key_close {
-    float: right;
-    width: 22.22%;
-}
-
-.provinces_keybord .key_close span {
-    background-color: #ACB3BB;
-}
-
+.provinces_keybord .key_close,
 .provinces_keybord .key_clean {
-    float: right;
-    width: 22.22%;
+  float: right;
+  width: 22.22%;
+}
+.num_keybord .key_close,
+.num_keybord .key_clean {
+  float: right;
 }
 
-.provinces_keybord li span {
-    display: block;
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 2px 2px 2px #888888;
-    /* max-width:48px; margin:0 auto; */
-    line-height: 32px;
-    padding-top: 2px;
+.provinces_keybord .key_close span,
+.num_keybord .key_close span {
+  background-color: #acb3bb;
+}
+.provinces_keybord li span,
+.num_keybord li span {
+  display: block;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px #888888;
+  /* max-width:48px; margin:0 auto; */
+  line-height: 32px;
+  padding-top: 2px;
 }
 
-.provinces_keybord li span:active {
-    background-color: #4DA9F2;
-    color: #fff;
+.provinces_keybord li span:active,
+.num_keybord li span:active {
+  background-color: #4da9f2;
+  color: #fff;
 }
-
 .key_input {
-    padding: 5px;
-    width: 350px;
-    margin: 0 auto;
+  padding: 5px;
+  margin: 0 auto;
+  float: left;
 }
 
 .key_input li {
-    float: left;
-    width: 14%;
-    padding: 2px;
-    text-align: center;
+  float: left;
+  padding: 2px;
+  text-align: center;
 }
 
 .key_input li span {
-    display: block;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 40px;
-    margin: 0 auto;
-    height: 40px;
-    line-height: 40px;
+  display: block;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 40px;
+  margin: 0 auto;
+  height: 40px;
+  line-height: 40px;
 }
-
-.num_keybord .ikey20 {
-    margin-left: 5%;
-}
-
-.num_keybord .li_w {
-    width: 11.11%;
-}
-
-.num_keybord .key_close {
-    float: right;
-    width: 22.22%;
-}
-
-.num_keybord .key_close span {
-    background-color: #ACB3BB;
-}
-
-.num_keybord .key_clean {
-    float: right;
-    width: 22.22%;
-}
-
-.num_keybord li span {
-    display: block;
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 2px 2px 2px #888888;
-    /* max-width:48px; margin:0 auto; */
-    line-height: 32px;
-    padding-top: 2px;
-}
-
-.num_keybord li span:active {
-    background-color: #4DA9F2;
-    color: #fff;
-}
-
 .keybord {
-    width: 150%;
+  padding-top: 55px;
+  max-width: 500px;
+  width: 100%;
 }
 
 .keyboard_checkbox {
-    display: flex;
-    float: right;
-    padding-top: 15px;
+  display: flex;
+  float: left;
+  padding-top: 15px;
 }
 
-.keyboard_checkbox input[type='checkbox'] {
-    padding-top: 1px;
-    display: flex;
-    float: right;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #d2d2d2;
-    border-left: none;
-    border-radius: 0 2px 2px 0;
+.keyboard_checkbox input[type="checkbox"] {
+  padding-top: 1px;
+  display: flex;
+  float: right;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d2d2d2;
+  border-left: none;
+  border-radius: 0 2px 2px 0;
 }

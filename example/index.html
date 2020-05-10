@@ -7,28 +7,23 @@
  * @LastEditTime: 2020-04-14 16:27:59
  -->
 <html>
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <title>车牌插件</title>
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../main.css" />
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
     <!-- <script src="../licenseplate.js"></script> -->
     <script type="text/javascript">
-        document.write("<script src=\"..\/licenseplate.js?timestamp=" + 1 + "\"><\/script>");
-        $().ready(function() {
-            renderCarKeyBoard($("#car_input"));
-        });
+      document.write(
+        '<script src="..\/licenseplate.js?timestamp=' + 1 + '"><\/script>'
+      )
+      $().ready(function () {
+        //renderCarKeyBoard($("#car_input"))
+        $("#car_input").licenseplate(7)
+      })
     </script>
-    <style type="text/css">
-        .car_input {
-            width: 380px;
-        }
-    </style>
-</head>
-
-<body>
-    <input type="hidden" id="car_input">
-</body>
-
+  </head>
+  <body>
+    <input type="text" id="car_input" />
+  </body>
 </html>
